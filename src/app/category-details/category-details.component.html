@@ -1,7 +1,8 @@
-<div *ngIf="category">
+<div *ngIf="category; else elseBlock">
     <h2>{{ category.name | uppercase }}</h2>
     <p class="category-details">Details</p>
     <div>
         <p class="category-text">{{ category.details }}</p>
     </div>
 </div>
+<div class="categoryChoose" #elseBlock><span>Choose</span> the category to know more about me</div>
