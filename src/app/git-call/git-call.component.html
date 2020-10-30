@@ -1,0 +1,14 @@
+<div class="container-fluid mt-4">
+    <div *ngIf='user' class="avatar row">
+        <p class="col-md-4">
+            <img class="img-fluid" src={{user.avatar_url}} alt="{{user.login}}" srcset="">
+        </p>
+        <div class="col-md-8">
+            <p class="user-name">{{user.name}}</p>
+            <p class="user-role">{{user.company}}</p>
+            <p class="user-bio">{{user.bio}}</p>
+            <p><a class="" target="_blank" href={{user.blog}}>LinkedIN</a></p>
+            <p><a href={{user.html_url}} target="_blank">My GitHub</a></p>
+        </div>
+    </div>
+</div>

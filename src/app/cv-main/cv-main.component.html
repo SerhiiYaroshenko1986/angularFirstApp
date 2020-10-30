@@ -1,0 +1,12 @@
+<div class="row mt-4 ml-1">
+    <div class="col-md-4">
+        <ul class="categories list-group text-center">
+            <li class="list-group-item" *ngFor="let category of categories" (click)="onSelect(category)" [class.active]="category === selectedCategory">
+                {{category.name}}
+            </li>
+        </ul>
+    </div>
+    <div class="result col-md-8">
+        <app-category-details [category]="selectedCategory"></app-category-details>
+    </div>
+</div>
